@@ -15,7 +15,7 @@ public class UseExampleButton : MonoBehaviour
     {
         this.num = num;
         this.page = page;
-        sceneNameText.text = "Example " + num.ToString();
+        sceneNameText.text = "Scenario " + num.ToString();
     }
 
     public void ClickedButton()
