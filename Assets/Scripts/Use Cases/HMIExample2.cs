@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HMIExample1 : MonoBehaviour
+public class HMIExample2 : MonoBehaviour
 {
     [SerializeField] private ExampleSceneManager exampleSceneManager;
 
@@ -27,10 +27,12 @@ public class HMIExample1 : MonoBehaviour
     public void ConfirmSpot(bool confirmed)
     {
         confirmSpot.SetActive(false);
+        findSpotButton.SetActive(false);
         if(confirmed)
         {
             startingManeuver.SetActive(true);
-            VehicleManeuver.Instance.StartManeuver();
+            ExampleSceneManager.Instance.ScenarioEnd();
+            //VehicleManeuver.Instance.StartManeuver();
             //exampleSceneManager.ScenarioEnd();
         }
         else

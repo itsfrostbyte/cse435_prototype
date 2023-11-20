@@ -5,6 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class ExampleSceneManager : MonoBehaviour
 {
+    public static ExampleSceneManager Instance;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
+
     [SerializeField] public GameObject scenarioEndText;
     public void ExitToMainMenu()
     {
