@@ -184,6 +184,7 @@ MonoBehaviour:
   findingSpot: {fileID: 2083751147}
   startingManeuver: {fileID: 1142302047}
   maneuverEnded: {fileID: 1368430752}
+  obstacleDetected: {fileID: 0}
 --- !u!1 &148847020
 GameObject:
   m_ObjectHideFlags: 0
@@ -838,7 +839,7 @@ Animator:
   m_GameObject: {fileID: 337662215}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 5dff9c677376848d0b6de315010f00b3, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd12600c0a644f4d92d64110f79d39c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
