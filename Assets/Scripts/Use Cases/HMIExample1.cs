@@ -12,6 +12,8 @@ public class HMIExample1 : MonoBehaviour
     [SerializeField] GameObject startingManeuver;
     [SerializeField] GameObject maneuverEnded;
 
+    [SerializeField] GameObject obstacleDetected;
+
     public void FindSpotButtonClicked()
     {
         findSpotButton.SetActive(false);
@@ -50,5 +52,17 @@ public class HMIExample1 : MonoBehaviour
         yield return new WaitForSeconds(2f);
         findingSpot.SetActive(false);
         SpotFound();
+    }
+
+    public void ObstacleDetected()
+    {
+        obstacleDetected.SetActive(true);
+        startingManeuver.SetActive(false);
+    }
+
+    public void ObstacleMoved()
+    {
+        obstacleDetected.SetActive(false);
+        startingManeuver.SetActive(true);
     }
 }

@@ -1373,7 +1373,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonPrefab: {fileID: 994406009914718711, guid: d6f12d1b88a0a4dbd8a9af56eea2f842, type: 3}
   buttonsParent: {fileID: 581431250}
-  exampleSceneCount: 3
+  exampleSceneCount: 5
 --- !u!1 &1032273563
 GameObject:
   m_ObjectHideFlags: 0
